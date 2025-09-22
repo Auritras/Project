@@ -3,10 +3,10 @@
 import mysql.connector as sqlconn
 
 myconn = sqlconn.connect(
-    host="localhost",
-    user="root",
-    password="********",  
-    database="uwu"
+    host="sql12.freesqldatabase.com",
+    user="sql12793853",
+    password="yE93h6nSmP",  
+    database="sql12793853"
 )
 
 if myconn.is_connected():
@@ -201,3 +201,4 @@ while True:
 
 
 #end
+
