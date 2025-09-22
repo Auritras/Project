@@ -100,34 +100,6 @@ def updTab():
     updRec()
     
 
-def accTab():
-    def accRec():
-        i = int(input("Enter id of student whose marks you wish to access: "))
-        sub= int(input("Which subject marks do you wish to access?\nPress 1 for physics\nPress 2 for chemistry\nPress 3 for maths\nPress 4 for english\nPress 5 for computer: "))
-        if sub == 1:
-            abh = "physics"
-        elif sub == 2:
-            abh = "chemistry"
-        elif sub == 3:
-            abh = "maths"
-        elif sub == 4:
-            abh = "english"
-        elif sub == 5:
-            abh = "computer"
-        else:
-            print("Invalid choice")
-        sql = f"SELECT {abh} FROM marks WHERE id = %s"
-        val = (i,)
-        mycursor.execute(sql,val)
-        data = mycursor.fetchone()
-        print(data[0])
-        showTab()
-        b = int(input("Do you wish to access any more records? Press 1 for yes, 2 for no: "))
-        if b == 1:
-            accRec()
-    accRec()
-
-
 showTab()
 
 while True:
@@ -149,3 +121,4 @@ while True:
         print("Invalid choice")
 
 #end
+
