@@ -154,7 +154,7 @@ def delMarks():
     except Exception as e:
         print("Error deleting marks:", e)
 
-# --- MAIN MENU LOOP ---
+#Main Menu
 while True:
     print("\n--- Main Menu ---")
     print("1. Insert Student")
@@ -198,5 +198,6 @@ while True:
             print("Invalid choice.")
     except ValueError:
         print("Please enter a valid number.")
+
 
 #end
